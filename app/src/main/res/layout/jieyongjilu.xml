@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5px"
+    android:paddingBottom="5px"
+    android:background="#70ffffff">
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/jieyong_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            />
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/jieyong_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/jieyong_quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="取消预约"
+        android:background="@drawable/biankuang11"
+        android:layout_margin="10px"
+        />
+</LinearLayout>

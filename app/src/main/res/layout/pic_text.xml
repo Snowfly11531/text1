@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70ffffff">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.text1.XCRoundImageView
+            android:id="@+id/zhaopian"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_1"
+            android:layout_margin="5dp" />
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/maijianame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="80px"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/wupinming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="￥"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="50"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView android:id="@+id/shangpingzhaopian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_2"
+        android:scaleType="fitXY" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shangpingjieshao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="这是一张风景照，讲的是什么什么"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/shengluohao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="…"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+</LinearLayout>

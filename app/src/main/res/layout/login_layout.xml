@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:id="@+id/textView" >
+        <TextView android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+                <com.example.text1.XCRoundImageView
+                    android:id="@+id/xiaohui"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/xiaohui" />
+                <TextView android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/yonghuming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="手机号"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/edit_shape"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/mima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:hint="密码"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/edit_shape"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:paddingTop="20px">
+                <CheckBox
+                    android:id="@+id/remember_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/abc"
+                    android:backgroundTintMode="add"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码"
+                    android:textSize="30px"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <Button android:layout_width="240px"
+            android:layout_height="100px"
+            android:id="@+id/denglu"
+            android:text="登陆"
+            android:background="@drawable/dl"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"/>
+        <Button android:layout_width="240px"
+            android:layout_height="100px"
+            android:text="注册"
+            android:id="@+id/zhuce"
+            android:background="@drawable/zc"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/textView2"/>
+</LinearLayout>

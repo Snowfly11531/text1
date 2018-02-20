@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.text1">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+     
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+     
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+     
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/xiaohui"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".loginactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firstactivity"
+            android:label="主界面" />
+        <activity
+            android:name=".SecendActivity"
+            android:label="哈哈"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="com.example.text1.1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".thirdactivity" />
+        <activity
+            android:name=".touxiangacyivity"
+            android:label="大头像">
+            <intent-filter>
+                <action android:name="com.example.text1.2" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".xiangqingactivity"
+            android:label="物品详情" />
+        <activity
+            android:name=".jieyongActivity"
+            android:label="借用" />
+        <activity android:name=".paiceActivity" />
+        <activity
+            android:name=".zhuceActivity"
+            android:label="注册" />
+        <activity android:name=".classroomActivity" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.text1.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <activity
+            android:name=".tianjiashangpingActivity"
+            android:label="出售" />
+        <activity android:name=".yonghuActivity"></activity>
+    </application>
+
+</manifest>

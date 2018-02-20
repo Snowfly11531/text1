@@ -1,0 +1,5 @@
+<!--drawable/editview_shape.xml-->
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:drawable="@drawable/xiahuaxian2" android:state_focused="false"/>
+     <item android:drawable="@drawable/xiahuaxian1" android:state_focused="true"/>
+ </selector>

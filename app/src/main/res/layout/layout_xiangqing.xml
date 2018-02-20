@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_xiangqing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.text1.xiangqingactivity">
+    <Button
+        android:id="@+id/ineed"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="我想要"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:layout_margin="20px"/>
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/zhaopian1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/img_1"
+                android:layout_margin="5dp"
+
+                />
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:text="50"
+                android:textSize="30dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/price1"
+                android:layout_marginTop="15dp"
+                android:text="￥"
+                android:textSize="30dp"
+                android:id="@+id/textView" />
+            <TextView
+                android:id="@+id/shangpingjieshao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是一张风景照，讲的是什么什么"
+                android:textSize="30dp"
+                android:layout_below="@id/zhaopian1" />
+
+            <com.example.text1.ListViewforScrollView
+                android:id="@+id/tupianlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shangpingjieshao1"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

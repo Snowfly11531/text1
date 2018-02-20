@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/green"
+        android:gravity="center"
+        android:layout_width="300px"
+        android:layout_height="170px"
+        android:background="#c0ffffff"/>

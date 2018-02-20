@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="30px"
+    android:layout_marginLeft="30px">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="200px">
+
+        <EditText
+            android:id="@+id/nicheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="50px"
+            android:text="昵称"
+            android:paddingLeft="10px"
+            android:background="@drawable/edit_shape"
+            android:layout_gravity="bottom"
+/>
+
+        <EditText
+            android:id="@+id/bianji1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:background="@drawable/edit_shape"
+            android:hint="例如：陈晨"
+            android:maxLines="1"
+            android:textSize="50px"
+            android:layout_gravity="bottom"
+            />
+        <ImageView
+            android:id="@+id/takeorchoose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:src="@drawable/paice"
+            android:onClick="show"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dianhua"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50px"
+            android:text="+86"
+            android:paddingLeft="15px"
+            android:background="@drawable/edit_shape"/>
+
+        <EditText
+            android:id="@+id/bianji2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:textSize="50px"
+            android:inputType="number"
+            android:background="@drawable/edit_shape"
+            android:hint="你的手机号码"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mima1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10px"
+            android:textSize="50px"
+            android:text="密码"
+            android:background="@drawable/edit_shape"/>
+
+        <EditText
+            android:id="@+id/bianji3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:background="@drawable/edit_shape"
+            android:textSize="50px"
+            android:hint="填写密码"
+            android:maxLines="1"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/zhuce1"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/zhuce"
+        android:text="注册"
+        android:textSize="40px"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:paddingTop="17px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="点击上面的“注册”按钮，即表示你同意《掌上南林软件许可及服务协议》"/>
+</LinearLayout>

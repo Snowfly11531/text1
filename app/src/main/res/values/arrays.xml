@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="use">
+       <item>空教室查询</item>
+       <item>空教室借用</item>
+
+
+   </string-array>
+</resources>

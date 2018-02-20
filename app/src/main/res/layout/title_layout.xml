@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlelayout"
+    android:layout_width="match_parent"
+    android:layout_height="163px"
+    android:orientation="vertical"
+    >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/titlegreen">
+    <com.example.text1.XCRoundImageView
+        android:id="@+id/titlepic1"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/tou_1"/>
+        <TextView
+            android:paddingLeft="20px"
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="45px"/>
+        <View android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <TextView android:layout_gravity="center"
+            android:paddingTop="2px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="90px"
+            android:text="南京林业大学"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/title"/>
+        </LinearLayout>
+
+</LinearLayout>

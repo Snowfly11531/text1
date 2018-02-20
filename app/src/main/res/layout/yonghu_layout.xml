@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/kebiaobeijing">
+    <include layout="@layout/title_layout"
+        android:id="@+id/title_layout3"/>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:paddingBottom="10px"
+                android:paddingTop="10px"
+                android:layout_marginBottom="10px"
+                android:paddingRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70ffffff"
+                >
+                <ImageView
+                    android:id="@+id/yonghu_touxiang"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="10px"
+                        android:id="@+id/yonghu_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:text="我就叫做张三"
+                        android:textSize="45px"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="20px"
+                        android:textSize="35px"
+                        />
+
+                    <TextView
+                        android:id="@+id/yonghu_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID:1201021"
+                        android:layout_margin="0dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:paddingBottom="10px">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/yi"
+                    android:background="@drawable/biankuang11"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="预约教室记录"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/biankuang11"/>
+            </LinearLayout>
+
+            <com.example.text1.ListViewforScrollView
+                android:id="@+id/jieyong_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.example.text1.ListViewforScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/biankuang11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/yer"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="二手市场正售商品记录"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.text1.ListViewforScrollView
+                    android:id="@+id/ershou_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.text1.ListViewforScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+    <include layout="@layout/diceng_layout"
+        android:id="@+id/diceng_layout3"/>
+</LinearLayout>
